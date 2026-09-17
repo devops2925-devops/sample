@@ -1,0 +1,17 @@
+name: jobs-needs-uses
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: checkout repo
+       uses: actions/checkout@v4
+
+     - name: Run a one-line script
+       run: echo "Hello, world!"
+
+
